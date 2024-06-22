@@ -1,0 +1,114 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0; 
+}
+
+header {
+    position:fixed;
+    z-index:10;
+    width: 100vw;
+    height: 50px;
+    
+    color:#fffbdb;
+    background-color: rgb(34, 34, 34);
+    border-bottom: 1px solid #fffbdb;
+}
+
+.navbar {
+    display:grid; 
+    position:relative;
+    float:right;
+
+    height:100%;
+    grid-template-columns: repeat(3, 100px) 75px;
+    gap: 10px;
+}
+
+.navbar div{
+    padding:15px 0;
+
+    font-family: "Trebuchet MS";
+    text-align:center; 
+}
+
+.nav:hover {
+    color: #a59132;
+    cursor: pointer;
+}
+
+main {
+    position:relative;  
+    top: 50px;
+    max-width:100vw;
+}
+
+main section {
+    width:100%;
+    overflow:hidden;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section h6 {
+    display:none;
+}
+
+#home {
+    background-color: #8eb1c7;
+    height:500px;
+}
+
+.grid-container {
+    display:grid;
+    position: relative;
+    padding: 5% 10%; 
+    justify-content: center;
+
+    grid-template-columns: 200px 400px;
+    gap:30px;
+}
+
+#profilePic {
+    display:block;
+    padding: 10% 0;
+    width: 100%;
+}
+
+#introPara p{
+    border: 2px solid #FFFBDB;
+    /* border-radius: 20%; */
+
+    padding: 5%;
+    text-align:left; 
+    color: #FFFBDB;
+    background-color: #26547C;
+}
+
+#about {
+    background-color: #A59132;
+    height: 500px;
+}
+
+#about p {
+    padding: 10%; 
+    font-weight:bold;
+    font-size:32px;
+
+    color: #291720;
+
+}
+
+#projects {
+    background-color: #26547C;
+    height: 500px; 
+}
+
+#projects p {
+    padding: 10%; 
+    font-weight:bold;
+    font-size:32px;
+
+    color: #FFFBDB;
+}
+
